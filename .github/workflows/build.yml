@@ -3,7 +3,7 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - master # Или main, проверь как у тебя называется ветка
+      - master # Проверь, что ветка реально master, а не main
 
 jobs:
   publish:
@@ -16,17 +16,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          registry-url: 'https://npmjs.org' # Возвращаем сюда
+          # Мы НЕ пишем здесь registry-url, чтобы npm install прошел как обычно
 
       - name: Install dependencies
         run: npm install
-        # Тут НЕ указываем env, чтобы npm install прошел без токена
 
       - name: Build CSS
         run: npm run build
 
       - name: Publish to NPM
-        run: npm publish --access public
+        # Мы указываем реестр прямо в команде публикации
+        run: npm publish --access public --registry https://npmjs.org
         env:
-          # А вот тут токен ОБЯЗАТЕЛЕН
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
