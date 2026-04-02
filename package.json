@@ -13,6 +13,6 @@
         "postcss-import": "^16.1.1"
     },
     "scripts": {
-        "build": "node_modules/.bin/postcss src/index.css -o dist/bundle.css"
+        "build": "node_modules/.bin/postcss index.css -o dist/bundle.css"
     }   
 }
