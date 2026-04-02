@@ -3,7 +3,7 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - master # Срабатывает при пуше в мастер
+      - master # Или main, проверь как у тебя называется ветка
 
 jobs:
   publish:
@@ -16,10 +16,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # УБРАЛИ registry-url отсюда! Это решит проблему с npm install
+          registry-url: 'https://npmjs.org' # Возвращаем сюда
 
       - name: Install dependencies
         run: npm install
+        # Тут НЕ указываем env, чтобы npm install прошел без токена
 
       - name: Build CSS
         run: npm run build
@@ -27,8 +28,5 @@ jobs:
       - name: Publish to NPM
         run: npm publish --access public
         env:
-          # Указываем токен ТОЛЬКО здесь
+          # А вот тут токен ОБЯЗАТЕЛЕН
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          # Если все равно будет 403, добавь принудительно реестр тут:
-          npm_config_registry: "https://npmjs.org"
-
