@@ -1,6 +1,5 @@
 {
     "name": "@_hako/dot_css",
-    "version": "1.0.0",
     "main": "dist/bundle.css",
     "files": [
         "dist"
