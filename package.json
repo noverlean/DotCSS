@@ -1,9 +1,9 @@
 {
-    "name": "@_hako/dot-css",
+    "name": "@_hako/dot_css",
     "version": "1.0.0",
     "main": "index.css", 
     "files": [
-      "src",
+        "src",
         "index.css"
     ],
     "devDependencies": {
