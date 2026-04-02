@@ -1,11 +1,11 @@
 {
     "name": "@_hako/dot_css",
     "version": "1.0.0",
-    "main": "index.css", 
+    "main": "dist/bundle.css",
     "files": [
-        "src",
-        "index.css"
+        "dist"
     ],
+    "version": "1.0.1",
     "devDependencies": {
         "cssnano": "^7.1.4",
         "postcss": "^8.5.8",
