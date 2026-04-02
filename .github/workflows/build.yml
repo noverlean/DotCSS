@@ -3,7 +3,7 @@ name: Build and Push CSS Bundle
 on:
   push:
     branches:
-      - main # Запуск при пуше в main
+      - master
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update css bundle [skip ci]"
-          file_pattern: 'dist/*.css' # Коммитим только результат сборки
+          file_pattern: 'dist/*.css'
