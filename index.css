@@ -1,1 +1,3 @@
-@import "src/"
+@import "src/classes.css";
+@import "src/default.css";
+@import "src/vars.css";
