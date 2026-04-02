@@ -16,15 +16,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          registry-url: 'https://npmjs.org' # Добавь это!
+          # УБРАЛИ registry-url отсюда! Это решит проблему с npm install
 
       - name: Install dependencies
         run: npm install
 
       - name: Build CSS
-        run: npm run build # Создает папку dist88
+        run: npm run build
 
       - name: Publish to NPM
         run: npm publish --access public
         env:
+          # Указываем токен ТОЛЬКО здесь
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          # Если все равно будет 403, добавь принудительно реестр тут:
+          npm_config_registry: "https://npmjs.org"
+
