@@ -13,5 +13,5 @@
     },
     "scripts": {
         "build": "node_modules/.bin/postcss index.css -o dist/bundle.css"
-    }   
+    }
 }

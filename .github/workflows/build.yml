@@ -3,7 +3,7 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - master # Проверь, что ветка реально master, а не main
+      - master
 
 jobs:
   publish:
@@ -16,16 +16,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # Мы НЕ пишем здесь registry-url, чтобы npm install прошел как обычно
 
       - name: Install dependencies
         run: npm install
 
       - name: Build CSS
         run: npm run build
-
-      - name: Publish to NPM
-        run: npm publish --access public --registry https://registry.npmjs.org/
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.QWE }}
 
