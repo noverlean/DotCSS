@@ -1,0 +1,11 @@
+.bg-b1 {
+    background-color: var(--c-base-1);
+}
+
+.bg-b2 {
+    background-color: var(--c-base-2);
+}
+
+.bg-b3 {
+    background-color: var(--c-base-3);
+}

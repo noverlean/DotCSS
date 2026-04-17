@@ -1,0 +1,53 @@
+.size-full {
+    width: 100vw;
+    height: 100vh;
+}
+.size-full-r {
+    width: 100vw;
+}
+.size-full-c {
+    height: 100vh;
+}
+
+.size-full-perc {
+    width: 100%;
+    height: 100%;
+}
+.size-full-r-perc {
+    width: 100%;
+}
+.size-full-c-perc {
+    height: 100%;
+}
+
+.size-half {
+    width: 50vw;
+    height: 50vh;
+}
+.size-half-r {
+    width: 50vw;
+}
+.size-half-c {
+    height: 50vh;
+}
+
+.size-half-perc {
+    width: 50%;
+    height: 50%;
+}
+.size-half-perc-r {
+    width: 50%;
+}
+.size-half-perc-c {
+    height: 50%;
+}
+
+.size-30px {
+    width: 30px;
+    height: 30px;
+}
+
+.size-40px {
+    width: 40px;
+    height: 40px;
+}

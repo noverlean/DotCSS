@@ -1,3 +1,23 @@
-@import "src/classes.css";
-@import "src/default.css";
 @import "src/vars.css";
+
+@import "src/default.css";
+
+@import "src/media-requests.css";
+
+@import "src/custom/a.css";
+@import "src/custom/buttons.css";
+
+@import "src/classes/align-items.css";
+@import "src/classes/background.css";
+@import "src/classes/border.css";
+@import "src/classes/bottom.css";
+@import "src/classes/display.css";
+@import "src/classes/justify-content.css";
+@import "src/classes/left.css";
+@import "src/classes/margin.css";
+@import "src/classes/overflow.css";
+@import "src/classes/position.css";
+@import "src/classes/right.css";
+@import "src/classes/size.css";
+@import "src/classes/top.css";
+@import "src/classes/transition.css";

@@ -1,0 +1,3 @@
+.trans-b-03 {
+    transition: all .3s var(--a-base);
+}

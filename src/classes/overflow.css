@@ -1,0 +1,11 @@
+.over-h {
+    overflow: hidden;
+}
+
+.over-v {
+    overflow: visible;
+}
+
+.over-s {
+    overflow: scroll;
+}

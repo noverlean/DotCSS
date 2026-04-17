@@ -1,17 +1,19 @@
 {
     "name": "@_hako/dot_css",
-    "main": "dist/bundle.css",
+    "version": "1.0.0",
+    "main": "index.css",
     "files": [
-        "dist"
+        "src",
+        "index.css"
     ],
-    "version": "1.0.2",
     "devDependencies": {
         "cssnano": "^7.1.4",
         "postcss": "^8.5.8",
         "postcss-cli": "^11.0.1",
+        "postcss-each": "^1.1.0",
         "postcss-import": "^16.1.1"
     },
     "scripts": {
-        "build": "node_modules/.bin/postcss index.css -o dist/bundle.css"
+        "build": "postcss index.css -o dist/bundle.css"
     }
 }
