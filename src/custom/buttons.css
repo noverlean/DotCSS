@@ -12,6 +12,21 @@ button:hover {
     color: var(--c-text-1);
 }
 
+.style-alt-1 {
+    background: var(--c-alt-1);
+}
+.style-alt-1:hover {
+    background: var(--c-alt-2);
+    box-shadow:  0px 0px 15px var(--c-alt-1) !important;
+}
+.style-alt-2 {
+    background: var(--c-alt-2);
+}
+.style-alt-2:hover {
+    background: var(--c-alt-3);
+    box-shadow:  0px 0px 15px var(--c-alt-2) !important;
+}
+
 .style-fill-1 {
     background: var(--c-base-1);
 }
