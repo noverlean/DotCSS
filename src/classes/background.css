@@ -1,11 +1,36 @@
 .bg-b1 {
     background-color: var(--c-base-1);
 }
-
 .bg-b2 {
     background-color: var(--c-base-2);
 }
-
 .bg-b3 {
     background-color: var(--c-base-3);
+}
+
+.bg-g1 {
+    background-color: var(--c-glass-1);
+    backdrop-filter: blur(30px);
+}
+.bg-g2 {
+    background-color: var(--c-glass-2);
+    backdrop-filter: blur(30px);
+}
+.bg-g3 {
+    background-color: var(--c-glass-3);
+    backdrop-filter: blur(30px);
+}
+
+.bg-t {
+    background-color: var(--c-transparent);
+}
+
+.bg-a1 {
+    background-color: var(--c-accent-1);
+}
+.bg-a2 {
+    background-color: var(--c-accent-2);
+}
+.bg-a3 {
+    background-color: var(--c-accent-2);
 }

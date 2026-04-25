@@ -1,15 +1,166 @@
 button {
     appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    background: var(--c-base-1);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: all .3s var(--a-base);
 }
-
 button:hover {
-    background-color: var(--c-accent-2) !important;
-    box-shadow:  0px 0px 15px var(--c-accent-2) !important;
-    z-index: 2;
+    background-color: var(--c-accent-1);
+    box-shadow:  0px 0px 15px var(--c-accent-1);
     color: var(--c-text-1);
 }
+
+.style-fill-1 {
+    background: var(--c-base-1);
+}
+.style-fill-1:hover {
+    background: var(--c-accent-2);
+    box-shadow:  0px 0px 15px var(--c-accent-1) !important;
+}
+.style-fill-2 {
+    background: var(--c-base-2);
+}
+.style-fill-2:hover {
+    background: var(--c-accent-2);
+    box-shadow:  0px 0px 15px var(--c-accent-1) !important;
+}
+.style-fill-3 {
+    background: var(--c-base-3);
+}
+.style-fill-3:hover {
+    background: var(--c-accent-2);
+    box-shadow:  0px 0px 15px var(--c-accent-1) !important;
+}
+
+.style-fill-success {
+    background: var(--c-success-1);
+}
+.style-fill-success:hover {
+    background: var(--c-success-2);
+    box-shadow:  0px 0px 15px var(--c-success-1) !important;
+}
+
+.style-fill-attention {
+    background: var(--c-attention-1);
+}
+.style-fill-attention:hover {
+    background: var(--c-attention-2);
+    box-shadow:  0px 0px 15px var(--c-attention-1) !important;
+}
+
+.style-fill-error {
+    background: var(--c-error-1);
+}
+.style-fill-error:hover {
+    background: var(--c-error-2);
+    box-shadow:  0px 0px 15px var(--c-error-1) !important;
+}
+
+.style-border-1 {
+    background: var(--c-base-1);
+    border: 1px solid var(--c-base-2);
+}
+.style-border-1:hover {
+    background: var(--c-accent-2);
+    border: 1px solid var(--c-accent-2);
+    box-shadow:  0px 0px 15px var(--c-accent-1) !important;
+}
+.style-border-2 {
+    background: var(--c-base-2);
+    border: 1px solid var(--c-base-3);
+}
+.style-border-2:hover {
+    background: var(--c-accent-2);
+    border: 1px solid var(--c-accent-2);
+    box-shadow:  0px 0px 15px var(--c-accent-1) !important;
+}
+.style-border-3 {
+    background: var(--c-base-3);
+    border: 1px solid var(--c-base-4);
+}
+.style-border-3:hover {
+    background: var(--c-accent-2);
+    border: 1px solid var(--c-accent-2);
+    box-shadow:  0px 0px 15px var(--c-accent-1) !important;
+}
+.style-border-success {
+    background: var(--c-success-1);
+    border: 1px solid var(--c-success-2);
+}
+.style-border-success:hover {
+    background: var(--c-success-2);
+    border: 1px solid var(--c-success-2);
+    box-shadow:  0px 0px 15px var(--c-success-1) !important;
+}
+.style-border-attention {
+    background: var(--c-attention-1);
+    border: 1px solid var(--c-attention-2);
+}
+.style-border-attention:hover {
+    background: var(--c-attention-2);
+    border: 1px solid var(--c-attention-2);
+    box-shadow:  0px 0px 15px var(--c-attention-1) !important;
+}
+.style-border-error {
+    background: var(--c-error-1);
+    border: 1px solid var(--c-error-2);
+}
+.style-border-error:hover {
+    background: var(--c-error-2);
+    border: 1px solid var(--c-error-2);
+    box-shadow:  0px 0px 15px var(--c-error-1) !important;
+}
+
+
+.style-glass-1 {
+    background: var(--c-glass-1);
+    backdrop-filter: blur(30px);
+}
+.style-glass-1:hover {
+    background: var(--c-glass-2);
+    box-shadow:  0px 0px 15px var(--c-glass-1) !important;
+}
+.style-glass-2 {
+    background: var(--c-glass-2);
+    backdrop-filter: blur(30px);
+
+}
+.style-glass-2:hover {
+    background: var(--c-glass-3);
+    box-shadow:  0px 0px 15px var(--c-glass-2) !important;
+}
+
+.style-glass-success {
+    background: var(--c-glass-success-1);
+    backdrop-filter: blur(30px);
+}
+.style-glass-success:hover {
+    background: var(--c-glass-success-2);
+    box-shadow:  0px 0px 15px var(--c-glass-success-2) !important;
+}
+
+.style-glass-attention {
+    background: var(--c-glass-attention-1);
+    backdrop-filter: blur(30px);
+}
+.style-glass-attention:hover {
+    background: var(--c-glass-attention-2);
+    box-shadow:  0px 0px 15px var(--c-glass-attention-2) !important;
+}
+
+.style-glass-error {
+    background: var(--c-glass-error-1);
+    backdrop-filter: blur(30px);
+}
+.style-glass-error:hover {
+    background: var(--c-glass-error-2);
+    box-shadow:  0px 0px 15px var(--c-glass-error-2) !important;
+}
+
+
+
 
 .active
 {

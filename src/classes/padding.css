@@ -2,16 +2,16 @@
     .p-$(val) {
         padding: $(val)px;
     }
-        .pt-$(val) {
+    .pt-$(val) {
         padding-top: $(val)px;
     }
-        .pr-$(val) {
+    .pr-$(val) {
         padding-right: $(val)px;
     }
-        .pb-$(val) {
+    .pb-$(val) {
         padding-bottom: $(val)px;
     }
-        .pl-$(val) {
+    .pl-$(val) {
         padding-left: $(val)px;
     }
 }
