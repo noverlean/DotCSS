@@ -125,7 +125,6 @@ button:hover {
 .style-glass-2 {
     background: var(--c-glass-2);
     backdrop-filter: blur(30px);
-
 }
 .style-glass-2:hover {
     background: var(--c-glass-3);

@@ -16,3 +16,27 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/*input {*/
+/*    transition: all .3s var(--a-base);*/
+/*}*/
+
+/*input::placeholder {*/
+/*    color: var(--c-text-2);*/
+/*}*/
+
+/*input:focus {*/
+/*    outline: none !important;*/
+/*    background-color: var(--c-glass-3);*/
+/*    border-color: var(--c-accent-3);*/
+/*}*/
+
+/*a {*/
+/*    font-weight: 500;*/
+/*    color: var(--c-text-2);*/
+/*    text-decoration: inherit;*/
+/*    transition: all .3s var(--a-base);*/
+/*}*/
+/*a:hover {*/
+/*    color: var(--c-accent-2);*/
+/*}*/

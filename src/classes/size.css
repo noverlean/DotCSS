@@ -67,7 +67,7 @@
 @each $val in 0, 5, 10, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 30, 35, 40, 45, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 400, 500, 600, 700, 800, 900, 1000 {
     .size-$(val) {
         width: $(val)vw;
-        height: $(val)px;
+        height: $(val)vh;
     }
     .size-$(val)% {
         width: $(val)%;
@@ -75,6 +75,14 @@
     }
     .size-$(val)px {
         width: $(val)px;
+        height: $(val)px;
+    }
+
+    .size-w-$(val)px {
+        width: $(val)px;
+    }
+
+    .size-h-$(val)px {
         height: $(val)px;
     }
 }
